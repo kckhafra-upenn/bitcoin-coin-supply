@@ -15,7 +15,6 @@ def num_BTC(b):
         c=results+(remainder * multiplier)
     else:
         c = b*c
-    print("C: ",c)
     return c
 
-num_BTC(813574)
+
