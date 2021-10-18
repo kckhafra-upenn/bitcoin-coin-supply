@@ -4,14 +4,16 @@ def num_BTC(b):
     c = float(50)
     c = b*c
     if(b>210000):
-        d = b/210000
-        e=0
-        while(d>0):
-            e = (210000*50)/2 +e
-            d=d-1
-        # print("HAlves: ",e)
-        c = e + ((b%210000)*50)
-    # print(c)
+        results=0
+        quotient = b/210000
+        remainder = b%210000
+        multiplier = float(50)
+        while(quotient>0):
+            results = (210000*multiplier) + results
+            multiplier=multiplier/2
+            quotient=quotient-1
+        
+        c=results+(remainder * multiplier)
     return c
 
-# num_BTC(648559)
+num_BTC(462283)
