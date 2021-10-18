@@ -3,8 +3,9 @@ import math
 def num_BTC(b):
     c = float(50)
     c = b*c
-    print(c)
+    if(b==210000){
+        c = (c/2)
+    }
     return c
 
-num_BTC(3)
 
