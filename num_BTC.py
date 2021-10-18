@@ -2,7 +2,6 @@ import math
 
 def num_BTC(b):
     c = float(50)
-    c = b*c
     if(b>210000):
         results=0
         quotient = b/210000
@@ -14,6 +13,8 @@ def num_BTC(b):
             quotient=quotient-1
         
         c=results+(remainder * multiplier)
+    else:
+        c = b*c
     print("C: ",c)
     return c
 
