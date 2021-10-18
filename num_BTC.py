@@ -13,8 +13,8 @@ def num_BTC(b):
             multiplier=multiplier/2
             quotient=quotient-1
         
-        total=results+(remainder * multiplier)
-    print("C: ",total)
-    return total
+        c=results+(remainder * multiplier)
+    print("C: ",c)
+    return c
 
 num_BTC(813574)
