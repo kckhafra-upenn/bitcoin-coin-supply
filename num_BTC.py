@@ -14,6 +14,7 @@ def num_BTC(b):
             quotient=quotient-1
         
         c=results+(remainder * multiplier)
+    print("C: ",c)
     return c
 
-num_BTC(462283)
+# num_BTC(813574)
