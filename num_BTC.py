@@ -9,9 +9,9 @@ def num_BTC(b):
         while(d>0):
             e = (210000*50)/2 +e
             d=d-1
-        print("HAlves: ",e)
+        # print("HAlves: ",e)
         c = e + ((b%210000)*50)
-    print(c)
+    # print(c)
     return c
 
-num_BTC(648559)
+# num_BTC(648559)
