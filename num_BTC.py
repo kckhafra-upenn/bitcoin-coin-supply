@@ -11,10 +11,10 @@ def num_BTC(b):
             results = (210000*multiplier) + results
             multiplier=multiplier/2
             quotient=quotient-1
-        
-        c=results+(remainder * multiplier)
+        r = remainder * multiplier
+        c=results+r
     else:
         c = b*c
     return c
 
-
+# print("NUM: ",num_BTC(813574))
