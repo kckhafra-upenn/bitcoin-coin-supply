@@ -7,6 +7,7 @@ def num_BTC(b):
     quotient = b/210000
     remainder = b%210000
     multiplier = float(50)
+    r=0
     if(b>210000):    
         while(quotient>0):
             results = (210000*multiplier) + results
