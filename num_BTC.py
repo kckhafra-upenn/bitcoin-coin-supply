@@ -1,7 +1,8 @@
 import math
 
 def num_BTC(b):
-    c = float(50)
+    fl = float(50)
+    c=0
     if(b>210000):
         results=0
         quotient = b/210000
@@ -14,7 +15,6 @@ def num_BTC(b):
         r = remainder * multiplier
         c=results+r
     else:
-        c = b*c
+        c = b*fl
     return c
-
 # print("NUM: ",num_BTC(813574))
