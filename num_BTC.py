@@ -4,7 +4,7 @@ def num_BTC(b):
     c = float(50)
     if(b>210000):
         results=0
-        quotient = b/210000
+        quotient = int(b/210000)
         remainder = b%210000
         multiplier = float(50)
         while(quotient>0):
@@ -17,4 +17,4 @@ def num_BTC(b):
         c = b*c
     return c
 
-print("NUM: ",num_BTC(813574))
+# print("NUM: ",num_BTC(813574))
